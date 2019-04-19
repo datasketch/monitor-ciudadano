@@ -3,7 +3,7 @@
 require('dotenv').config();
 
 // Require keystone
-var keystone = require('keystone');
+const keystone = require('keystone');
 
 keystone.init({
 	'name': 'monitor-ciudadano',
