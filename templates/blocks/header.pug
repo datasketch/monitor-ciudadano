@@ -1,0 +1,14 @@
+mixin nav(url, slug)
+  div.topnav
+    a.navlink(href='/about' class=(section === 'about' ? 'active' : '')) EL MONITOR
+    a.navlink(href='/datos' class=(section === 'datos' ? 'active' : '')) DATOS
+    a.navlink(href='/participa' class=(section === 'participa' ? 'active' : '')) PARTICIPA
+    a.navlink(href='javascript:void(0);', class='icon', onclick='dropdownMenu()')
+      img.navicon(src='/images/hamburger.svg', alt='')
+
+mixin header(url, slug)
+  header.header
+    nav.headernav
+      a.navlogo(href='/')
+        img(src='/images/logo_monitor.svg', alt='')
+      +nav(url, slug)

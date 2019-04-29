@@ -6,6 +6,10 @@ module.exports = {
 	context: path.join(__dirname, '../client/'),
 	entry: {
 		home: ['./home/'],
+		default: ['./default'],
+		about: ['./about'],
+		datos: ['./datos'],
+		participa: ['./participa'],
 	},
 	output: {
 		filename: 'js/[name].js',
@@ -38,4 +42,3 @@ module.exports = {
 		new webpack.HotModuleReplacementPlugin(),
 	],
 };
-

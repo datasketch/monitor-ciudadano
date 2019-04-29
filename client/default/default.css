@@ -1,0 +1,47 @@
+.headernav {
+  display: flex;
+  height: 40px;
+  padding: 10px 0px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.topnav {
+  width: 75%;
+  overflow: hidden;
+}
+
+.navlink {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%;
+  color: #e85a1e;
+}
+
+.navlink:hover {
+  background-color: #ddd;
+  /* color: black; */
+}
+
+.active {
+  background-color: #4CAF50;
+  /* color: white; */
+}
+
+.navlogo {
+  width: 25%;
+  text-align: center;
+}
+
+.navlogo img {
+  height: 100%;
+}
+
+.navicon {
+  height: 20px;
+  display: none;
+}
