@@ -1,5 +1,6 @@
 include ../mixins/flash-messages
 include ../blocks/header
+include ../blocks/footer
 
 doctype html
 html
@@ -33,10 +34,13 @@ html
 	body
 		+flash-messages(messages)
 		+header
+		block content
+		
+		footer
+			+footer
 		
 		block main
 		//- Add scripts that are globally required by your site here.
 		//- Include template-specific javascript files by extending the js block
-		//- +footer
 		block js
 		script(src="/js/default.js")

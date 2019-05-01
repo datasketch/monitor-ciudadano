@@ -1,0 +1,51 @@
+.footer {
+  background-color: #0a446b;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  min-height: 200px;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer .col {
+  width: 20%;
+}
+
+.logo {
+  height: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.vertical_container {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.fph {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+#transparencia {
+  background-image: url('/images/logo_transparencia.svg');
+}
+
+#monitor {
+  background-image: url('/images/logo_monitor_w.svg');
+}
+
+#datasketch {
+  background-image: url('/images/logo_datasketch.svg');
+}
+
+#fph {
+  background-image: url('/images/logo_fph.svg');
+  width: 100%;
+}
