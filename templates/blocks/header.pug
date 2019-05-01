@@ -1,14 +1,27 @@
-mixin nav(url, slug)
-  div.topnav
-    a.navlink(href='/about' class=(section === 'about' ? 'active' : '')) EL MONITOR
-    a.navlink(href='/datos' class=(section === 'datos' ? 'active' : '')) DATOS
-    a.navlink(href='/participa' class=(section === 'participa' ? 'active' : '')) PARTICIPA
-    a.navlink(href='javascript:void(0);', class='icon', onclick='dropdownMenu()')
-      img.navicon(src='/images/hamburger.svg', alt='')
+mixin social
+  div.socialnav
+    a.soclink(href='https://twitter.com/transparenciaco', id='icon_twitter', target="_blank")
+    a.soclink(href='mailto:monitorciudadano@transparenciacolombia.org', id='icon_mail')
+    a.soclink(href='https://www.facebook.com/transparenciaporcolombia/', id='icon_facebook', target="_blank")
 
-mixin header(url, slug)
+mixin nav
+  div.navmenu
+    .navlink(class=(section === 'about' ? 'active' : ''))
+      a(href='/about') EL MONITOR
+    .navlink(class=(section === 'datos' ? 'active' : ''))
+      a(href='/datos') DATOS
+    .navlink(class=(section === 'participa' ? 'active' : ''))
+      a(href='/participa') PARTICIPA
+
+mixin header
   header.header
-    nav.headernav
-      a.navlogo(href='/')
-        img(src='/images/logo_monitor.svg', alt='')
-      +nav(url, slug)
+    nav.headernav(id='navMenu')
+      a(href='/')
+        .navitem(class='logo')
+      div.navitem(class='topnav')
+        +nav
+        +social
+      a.navitem(id='hamburger' href='javascript:void(0);', onclick="function dropdownMenu() {var x = document.getElementById('navMenu');if (x.className === 'headernav') {x.className += ' responsive'; console.log('dropdown activado');} else {x.className = 'headernav';}} dropdownMenu();")
+        //- img.navicon(src='/images/hamburger.svg', alt='')
+
+      

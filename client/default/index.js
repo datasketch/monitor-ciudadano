@@ -1,4 +1,5 @@
 import './default.css';
+import './footer.css';
 import './reset.css';
 console.log('Hola default');
 
