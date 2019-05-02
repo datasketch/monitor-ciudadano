@@ -2,11 +2,16 @@
   box-sizing: border-box;
 }
 
+.content {
+  position: absolute;
+  top: 70px;
+  width: 100%;
+}
+
 .headernav {
   height: 70px;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
   font-family: 'Josefin Sans', sans-serif;
-  overflow: hidden;
 }
 
 .navitem {
@@ -15,7 +20,7 @@
   text-align: center;
 }
 
-.logo {
+.logo_monitor {
   text-align: center;
   background-image: url('/images/logo_monitor.svg');
   background-size: contain;
@@ -106,7 +111,6 @@
 
 
 /* Small screens */
-/* THIS IS NOT WORKING */
 @media screen and (max-width: 1024px) {
 
   .headernav .navitem:not(:first-child) {
@@ -118,9 +122,35 @@
     display: block;
   }
 
+  #navMenu {
+    z-index: 999;
+  }
+
   .headernav.responsive {
+    position: absolute;
+    width: 100%;
+    overflow: visible;
+    height: auto;
+    /* margin-top: -10px; */
+  }
+
+  .navitem .topnav {
     position: relative;
-    background-color: #000000;
+    top: 70px;
+  }
+
+  #menuContainer {
+    width: 100%;
+    height: auto;
+  }
+
+  .navmenu {
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    z-index: 999;
+    height: 100%;
+    float: none;
   }
 
   .headernav.responsive #hamburger {
@@ -133,5 +163,14 @@
     float: none;
     display: block;
     text-align: left;
+  }
+
+  .socialnav {
+    display: none;
+  }
+
+  .content {
+    position: absolute;
+    top: 70px;
   }
 }

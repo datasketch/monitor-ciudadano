@@ -17,11 +17,10 @@ mixin header
   header.header
     nav.headernav(id='navMenu')
       a(href='/')
-        .navitem(class='logo')
-      div.navitem(class='topnav')
+        .navitem(class='logo_monitor')
+      div.navitem(class='topnav', id='menuContainer')
         +nav
         +social
-      a.navitem(id='hamburger' href='javascript:void(0);', onclick="function dropdownMenu() {var x = document.getElementById('navMenu');if (x.className === 'headernav') {x.className += ' responsive'; console.log('dropdown activado');} else {x.className = 'headernav';}} dropdownMenu();")
-        //- img.navicon(src='/images/hamburger.svg', alt='')
+      a.navitem(id='hamburger' href='javascript:void(0);', onclick="function dropdownMenu() {var x = document.getElementById('navMenu');if (x.className === 'headernav') {x.className += ' responsive';} else {x.className = 'headernav';}} dropdownMenu();")
 
       

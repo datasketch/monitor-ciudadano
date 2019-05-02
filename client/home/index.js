@@ -1,4 +1,5 @@
-console.log('Hola Marie Kondo');
+import './home.css';
+console.log('Hola home');
 
 if (module.hot) {
 	module.hot.accept();
