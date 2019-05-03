@@ -2,15 +2,40 @@ extends ../layouts/default
 
 block content
 	.section(class='s1')
-		.col-2(class='text')
+		.text
 			h1 EL MONITOR
 			h2 CIUDADANO
 			h3 DE LA CORRUPCIÓN
 			.paragraph
 				p Es una plataforma de curaduría de información, investigación y seguimiento de la corrupción en nuestro país.
-		.col-2
-			.img(id='man')
-	.section
+	.section(class='s2')
+		.col-2(class='s')
+			.img
+		.col-2(class='m')
+			.text
+				h4 CONOCE NUESTRO
+				h3 NUEVO INFORME
+				.paragraph
+					p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
+			.buttons
+				a.btn(href='/docs/Informe Preliminar Monitor Ciudadano 05042019 con propuesta de conclusión.docx', target='_blank') DESCARGA EL INFORME
+				a.btn(href='') CONOCE LOS DATOS
+	.section(class='s3')
+		.col-2(class='img', id='informes')
+			.text
+				h3.s OTROS INFORMES
+				.paragraph
+					p Realizamos informes a partir de un análisis histórico y estructural, pero también una aproximación coyuntural a la corrupción.
+				.buttons
+					a.btn(href='') CONÓCELOS
+		.col-2(class='img', id='visor')
+			.text
+				h3.s VISOR DE DATOS
+				.paragraph
+					p Permitimos que la ciudadanía interactúe con los datos recopilados y los explore por medio de nuestra herramienta de visualización.
+				.buttons
+					a.btn(href='') EXPLORA LOS DATOS
+				
 
 block js
 	script(src="/js/home.js")

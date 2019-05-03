@@ -1,0 +1,13 @@
+.s2 {
+  background-color: #fdb731;
+  color: #e85a1e;
+}
+
+.s2 .col-2 .img {
+  background-image: url('/images/home_2.png');
+}
+
+.s2 .btn {
+  color: #fff;
+  background-color: #e85a1e;
+}
