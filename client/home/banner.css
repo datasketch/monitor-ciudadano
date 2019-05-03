@@ -6,6 +6,9 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
+}
+
+.section.s1 {
   display: block;
 }
 
