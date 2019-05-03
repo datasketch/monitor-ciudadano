@@ -1,0 +1,38 @@
+.subnav {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.07em;
+  background-color: #137fc0;
+  width: 100%;
+  overflow: scroll;
+}
+
+.items {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+
+  justify-content: space-between;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  min-width: 610px;
+}
+
+.subnav .item {
+  align-self: center;
+  text-align: center;
+  padding: 15px;
+  /* padding-left: 8%;
+  padding-right: 8%; */
+  color: #fff;
+  text-decoration: none;
+  width: 25%;
+  min-width: 120px;
+}
+
+.subnav .item.active {
+  background-color: #e85a1e;
+}
+
+.subnav::-webkit-scrollbar {
+  display: none;
+}

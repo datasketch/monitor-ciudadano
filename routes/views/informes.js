@@ -4,5 +4,6 @@ exports = module.exports = (req, res) => {
 	const view = new keystone.View(req, res);
 	const { locals } = res;
 	locals.section = 'datos';
-	view.render('datos');
+	locals.subsection = 'informes';
+	view.render('informes');
 };

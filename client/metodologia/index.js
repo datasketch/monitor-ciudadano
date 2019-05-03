@@ -1,5 +1,5 @@
-import './about.css';
-console.log('Hola about');
+import './metodologia.css';
+console.log('Hola metodologia');
 
 // Hot Module Replacement [HMR]
 if (module.hot) {

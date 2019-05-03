@@ -1,5 +1,5 @@
-import './datos.css';
-console.log('Hola datos');
+import './visor.css';
+console.log('Hola visor');
 
 // Hot Module Replacement [HMR]
 if (module.hot) {

@@ -1,0 +1,79 @@
+.content {
+  background-color: #f2f2f2;
+}
+
+.s1 {
+  background-color: #0a446b;
+  color: #fff;
+}
+
+.s1 .col-2 .img {
+  background-image: url('/images/informes.png');
+}
+
+.s1 .btn {
+  color: #fff;
+  background-color: #137fc0;
+}
+
+.s1 .text h5 {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 800;
+  /* opacity: 0.5; */
+  padding: 10px 10px;
+}
+
+.s1 .text h4 {
+  font-size: 30px;
+}
+
+#divider_informes {
+  background-image: url('/images/divider_blue.png');
+  background-position: top;
+  background-repeat: repeat-x;
+  background-size: contain;
+  width: 100%;
+  height: 50px;
+  margin-top: -3px;
+}
+
+.s2 {
+  padding: 50px 0px;
+  min-height: 500px;
+}
+
+.s2 .text h3 {
+  font-weight: 800;
+  font-size: 50px;
+  letter-spacing: 0.07em;
+  text-align: center;
+  color: #137fc0;
+  padding-top: 5px;
+}
+
+.s2 .text h4 {
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 0.07em;
+  text-align: center;
+  color: #0a446b;
+}
+
+.s2 .card .text h4 {
+  text-align: left;
+  color: #137fc0;
+}
+
+.s2 .card .text h5 {
+  color: #0a446b;
+}
+
+.s2 .card .btn {
+  background-color: #137fc0;
+  color: #fff;
+}
+
+.s2 .card .btn.dark {
+  background-color: #0a446b;
+}

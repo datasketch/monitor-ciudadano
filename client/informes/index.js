@@ -1,5 +1,5 @@
-import './about.css';
-console.log('Hola about');
+import './informes.css';
+console.log('Hola INFORMES');
 
 // Hot Module Replacement [HMR]
 if (module.hot) {

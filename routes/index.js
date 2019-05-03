@@ -30,7 +30,10 @@ exports = module.exports = function (app) {
 	// Views
 	app.get('/', routes.views.index);
 	app.get('/about', routes.views.about);
-	app.get('/datos', routes.views.datos);
+	app.get('/datos/visor', routes.views.visor);
+	app.get('/datos/informes', routes.views.informes);
+	app.get('/datos/descargas', routes.views.descargas);
+	app.get('/datos/metodologia', routes.views.metodologia);
 	app.get('/participa', routes.views.participa);
 	// app.get('/blog/:category?', routes.views.blog);
 	// app.get('/blog/post/:post', routes.views.post);

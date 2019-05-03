@@ -12,6 +12,18 @@
   background-color: #e85a1e;
 }
 
+.s2 .text h5 {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 800;
+  /* opacity: 0.5; */
+  padding: 10px 10px;
+}
+
+.s2 .text h4 {
+  font-size: 30px;
+}
+
 .s3 {
   color: #fff;
 }

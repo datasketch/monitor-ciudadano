@@ -8,7 +8,10 @@ module.exports = {
 		home: ['./home/'],
 		default: ['./default'],
 		about: ['./about'],
-		datos: ['./datos'],
+		visor: ['./visor'],
+		informes: ['./informes'],
+		descargas: ['./descargas'],
+		metodologia: ['./metodologia'],
 		participa: ['./participa'],
 	},
 	output: {
