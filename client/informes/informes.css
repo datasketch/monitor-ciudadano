@@ -77,3 +77,21 @@
 .s2 .card .btn.dark {
   background-color: #0a446b;
 }
+
+@media screen and (max-width: 768px) {
+  #divider_informes {
+    background-image: url('/images/divider_blue_small.png');
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #divider_informes {
+    background-image: url('/images/divider_blue_xsmall.png');
+  }
+  .s2 .text h4 {
+    font-size: 20px;
+    letter-spacing: 0.07em;
+    text-align: center;
+    color: #0a446b;
+  }
+}
