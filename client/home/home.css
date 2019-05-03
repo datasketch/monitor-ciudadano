@@ -69,3 +69,49 @@
   color: #fff;
   background-color: #f75d21;
 }
+
+#divider_home {
+  background-image: url('/images/divider.png');
+  background-position: top;
+  background-repeat: repeat-x;
+  background-size: contain;
+  width: 100%;
+  height: 50px;
+  margin-top: -3px;
+}
+
+.s5 .col-2 .text h3:first-child {
+  font-weight: 400;
+}
+
+.s5 .final {
+  display: none;
+}
+
+@media screen and (max-width: 930px) {
+
+  .s5 .col-2 .img {
+    height: 300px;
+  }
+
+}
+
+@media screen and (max-width: 899px) {
+
+  .s5 .initial {
+    display: none;
+  }
+
+  .s5 .final {
+    display: block;
+  }
+
+}
+
+@media screen and (max-width: 440px) {
+
+  .s5 .col-2 .img {
+    height: 200px;
+  }
+
+}
