@@ -1,6 +1,9 @@
 extends ../layouts/default
 include ../blocks/subnav
 
+block css
+	link(rel='stylesheet', href='/styles/visor.css')
+
 block content
   +subnav
   h1 Estoy en Visor
