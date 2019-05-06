@@ -1,6 +1,82 @@
 extends ../layouts/default
 
 block content
+	.section(class='s1')
+		.col-2(class='s')
+			.img
+		.col-2(class='m')
+			.text
+				h4 ¿QUÉ ES
+				h3 EL MONITOR
+				h3.slim CIUDADANO
+					span.bold ?
+				.paragraph
+					p Es una plataforma de curaduría de información, investigación y seguimiento de la corrupción en nuestro país. El Monitor genera informes descriptivos y de análisis y bases de datos procesadas y abiertas para poner a disposición de la ciudadanía. Contar con información sobre este complejo fenómeno contribuye a una lectura de la corrupción más precisa y a acciones anticorrupción más eficientes.
+	.section(class='s2')
+		.col-2(class='final')
+			.img
+		.col-1(class='img')
+			.text
+				h4 UN
+				h3 HECHO DE CORRUPCIÓN
+				h4 ES
+				.paragraph
+					p Es la ocurrencia de irregularidades o conductas ilegales reportadas en notas de prensa que constituyan un abuso de posiciones de poder o de confianza, para el beneficio particular en detrimento del interés colectivo, realizado a través de ofrecer o solicitar, entregar o recibir bienes o dinero en especie, en servicios o beneficios, a cambio de acciones, decisiones u omisiones.
+	.section(class='s3')
+		.col-1(class='title')
+			.text
+				h4 ¿CÓMO
+				h3.slim FUNCIONA
+					span.bold ?
+				.paragraph
+					p Con el objetivo de visibilizar la situación de corrupción en Colombia, este portal te permite visualizar los datos recopilados sobre hechos de corrupción reportados en la prensa. También puedes descargarlos y leer los informes que realizamos a partir del análisis de estos datos.
+		.col-1(class='flex')
+			.col-3
+				.img(id='visualiza')
+				.text
+					a(href='/datos/visor')
+						h5 VISUALIZA
+						h5.slim LOS DATOS
+			.col-3
+				.img(id='lee')
+				.text
+					a(href='/datos/informes')
+						h5 LEE
+						h5.slim LOS INFORMES
+			.col-3
+				.img(id='descarga')
+				.text
+					a(href='/datos/descargas')
+						h5 DESCARGA
+						h5.slim LOS DATOS
+	.section(class='s4')
+		.col-2(class='title')
+			.text
+				h3 ¿QUIÉNES
+				h3.slim SOMOS
+					span.bold ?
+			.img(id='quienes')
+		.col-2
+			.text
+				h5 NUESTRO EQUIPO
+				h6 MARCELA RESTREPO HUNG
+				p Directora de Gestión del Conocimiento.
+				h6 ÁNGELA MARÍA RODRÍGUEZ SÁNCHEZ
+				p Coordinadora Monitor Ciudadano.
+				h6 PAULA MUÑOZ GÓMEZ
+				p Asistente del proyecto Monitor Ciudadano.
+				h6 MAICOL CARRASQUILLA ROMERO
+				p Pasante Monitor Ciudadano (Agosto a diciembre 2018).
+				h5 NUESTROS COLABORADORES
+				h6 EDUARDO ARIAS
+				p Periodista. Redacción Monitor Ciudadano.
+				h6 ARIEL CORTÉS
+				p Ingeniero. Bases de datos Monitor Ciudadano.
+				h6 DATASKETCH
+				p Ciencia de datos y visualización.
+				h6 ECOANALÍTICA S.A.S.
+				p Asesores en ciencia de datos.
+			
 
 block js
 	script(src="/js/about.js")
