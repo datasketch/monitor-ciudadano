@@ -2,11 +2,12 @@ extends ../layouts/default
 include ../blocks/subnav
 
 block css
+	link(rel='stylesheet', href='/styles/default.css')
 	link(rel='stylesheet', href='/styles/visor.css')
 
 block content
-  +subnav
-  h1 Estoy en Visor
+	+subnav
+	h1 Estoy en Visor
 
 block js
-  script(src="/js/visor.js")
+	script(src="/js/visor.js")
