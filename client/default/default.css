@@ -572,6 +572,80 @@ blockquote, q {
   display: none;
 }
 
+/* Cards CSS */
+
+.cards {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.card {
+  width: 40%;
+  min-width: 300px;
+  background-color: #fff;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.05);
+  padding: 0;
+  padding-top: 40px;
+  text-align: left;
+  line-height: 1.2;
+  margin: 30px;
+  position: relative;
+}
+
+.card .text {
+  padding: 0px 40px;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.card .text h4 {
+  padding-bottom: 20px;
+}
+
+.card .text h5 {
+  font-weight: 800;
+  padding-bottom: 20px;
+  letter-spacing: 0.07em;
+  font-size: 18px;
+}
+
+.card .text .paragraph {
+  color: #4d4d4d;
+  font-size: 13px;
+  padding-bottom: 30px;
+}
+
+.card .buttons {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+  /* padding-top: 40px; */
+  position: absolute;
+  bottom: 0;
+  margin-top: 40px;
+}
+
+.card .btn {
+  margin: 0;
+  width: 50%;
+  text-align: center;
+}
+
+@media screen and (max-width: 720px) {
+  .card {
+    width: 80%;
+  }
+}
+
+
 /* Footer CSS */
 
 .footer {
