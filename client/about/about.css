@@ -221,6 +221,18 @@
   .s4 .text p {
     text-align: center;
   }
+
+  #quienes {
+    height: 280px;
+  }
+  .s4 .title .text {
+    padding: 50px 0px 0px 0px;
+  }
+
+  .s4 .text {
+    padding: 10px 0px 80px 0px;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -321,8 +333,20 @@
     height: 200px;
   }
 
-  .s4 .text {
+  .s4 .title .text {
     padding: 50px 0px 30px 0px;
+  }
+
+  .s4 .text h5 {
+    font-size: 25px;
+  }
+
+  .s4 .text h6 {
+    font-size: 13px;
+  }
+
+  .s4 .text p {
+    font-size: 11px;
   }
 }
 
