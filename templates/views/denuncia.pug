@@ -5,7 +5,24 @@ block css
   link(rel='stylesheet', href='/styles/denuncia.css')
 
 block content
-  iframe(src='http://50.31.146.35/~wwwmonit/monitorCorrupcion/publico/denuncia.php', frameborder="0", width="100%", style="min-height: 1000px")
+  .section(class='divider', id='divider_alac')
+  .section(class='s1')
+    .col-2
+      .text
+        h3 CENTRO DE
+        h3.slim ASESORÍA LEGAL
+        h4 ANTICORRUPCIÓN
+        .paragraph
+          p ALAC es un servicio ciudadano de asesoría legal gratuita y confidencial que se brinda a las personas que deseen denunciar presuntos casos de corrupción.
+    .col-2
+      .img
+  .section(class='s2')
+    .col-1
+      .text
+        h3.slim LLENA ESTE
+        h3 FORMULARIO
+  .frame
+    iframe(src='http://50.31.146.35/~wwwmonit/monitorCorrupcion/publico/denuncia.php', frameborder="0", style="min-height: 1000px")
 
 block js
   script(src="/js/denuncia.js")
