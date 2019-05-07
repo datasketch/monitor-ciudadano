@@ -66,6 +66,20 @@
   width: 100%;
 }
 
+#menuContainer {
+  display: none;
+}
+
+.logo_monitor {
+  background-image: url('/images/logo_alac.svg') !important;
+}
+
+@media screen and (max-width: 1024px) {
+  #hamburger {
+    display: none !important;
+  }
+}
+
 @media screen and (max-width: 930px) {
 
   .s5 .col-2 .img {
