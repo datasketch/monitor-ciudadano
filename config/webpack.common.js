@@ -13,6 +13,7 @@ module.exports = {
 		descargas: ['./descargas'],
 		metodologia: ['./metodologia'],
 		participa: ['./participa'],
+		denuncia: ['./denuncia'],
 	},
 	output: {
 		filename: 'js/[name].js',

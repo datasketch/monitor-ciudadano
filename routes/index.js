@@ -35,6 +35,7 @@ exports = module.exports = function (app) {
 	app.get('/datos/descargas', routes.views.descargas);
 	app.get('/datos/metodologia', routes.views.metodologia);
 	app.get('/participa', routes.views.participa);
+	app.get('/denuncia', routes.views.denuncia);
 	// app.get('/blog/:category?', routes.views.blog);
 	// app.get('/blog/post/:post', routes.views.post);
 };
