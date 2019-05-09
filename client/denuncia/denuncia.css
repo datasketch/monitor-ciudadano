@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
-  height: 400px;
+  height: 500px;
 }
 
 .s1 {
@@ -25,21 +25,156 @@
   font-weight: 800;
 }
 
+.s1 .btn {
+  color: #fff;
+  background-color: #f75d21;
+}
+
 .s2 {
   background-color: #fa8223;
+  color: #e32e04;
+}
+
+.s2 h3 {
+  color: #e32e04;
+  line-height: 1em;
+}
+
+.s2 .btn {
+  background-color: #e32e04;
   color: #fff;
+}
+
+.s2 .col-2 .img {
+  background-image: url('/images/denuncia_1.png');
+  height: 450px;
+}
+
+.s2 .col-2 .text h3:last-of-type {
+  font-weight: 400;
+}
+
+.s2 .paragraph {
+  color: #fff;
+}
+
+.s3 {
+  background-color: #fdb731;
+  color: #f85d07;
+}
+
+.s3 h3 {
+  color: #f85d07;
+}
+
+.s3 .col-2 .img {
+  background-image: url('/images/denuncia_2.png');
+  height: 450px;
+}
+
+.s3 .col-2 .text h3.slim {
+  font-weight: 400;
+  font-size: 36px;
+}
+
+.s3 .paragraph {
+  color: #fff;
+}
+
+.s3 .final {
+  display: none;
+}
+
+.s4 {
+  background-color: #c250c2;
+  color: #941994;
+}
+
+.s4 h3 {
+  color: #941994;
+  line-height: 1.2em;
+}
+
+.s4 h3.slim {
+  font-weight: 400;
+  font-size: 35px;
+}
+
+.s4 .col-2 .img {
+  background-image: url('/images/denuncia_3.png');
+  height: 450px;
+}
+
+.s4 .paragraph {
+  color: #fff;
+}
+
+.s5 {
+  background-color: #137fc0;
+  color: #013f91;
+}
+
+.s5 h3 {
+  color: #013f91;
+}
+
+.s5 .col-2 .img {
+  background-image: url('/images/denuncia_4.png');
+  height: 400px;
+}
+
+.s5 .col-2 .text h3.slim {
+  font-weight: 400;
+  font-size: 36px;
+}
+
+.s5 .paragraph {
+  color: #fff;
+}
+
+.s5 .final {
+  display: none;
+}
+
+.s6 {
+  background-color: #0a446b;
+  color: #137fc0;
+}
+
+.s6 h3 {
+  color: #137fc0;
+  line-height: 1.2em;
+}
+
+.s6 h3.slim {
+  font-weight: 400;
+  font-size: 35px;
+}
+
+.s6 .col-2 .img {
+  background-image: url('/images/denuncia_5.png');
+  height: 450px;
+}
+
+.s6 .paragraph {
+  color: #fff;
+}
+
+.s7 {
+  background-color: #fff;
+  color: #137fc0;
   height: 250px;
 }
 
-.s2 .col-1 .text {
+.s7 .col-1 .text {
   padding-top: 80px;
 }
 
-.s2 .col-1 .text h3 {
+.s7 .col-1 .text h3 {
   font-size: 40px;
 }
 
-.s2 .col-1 .text h3.slim {
+.s7 .col-1 .text h3.slim {
   font-weight: 400;
   font-size: 30px;
 }
@@ -57,7 +192,6 @@
 .frame {
   background-color: #fa8223;
   width: 100%;
-  padding: 0% 3%;
   padding-bottom: 50px;
 }
 
@@ -78,17 +212,109 @@
   #hamburger {
     display: none !important;
   }
+  .s1 .col-2 p {
+    padding: 20px 20px;
+  }
 }
 
 @media screen and (max-width: 930px) {
 
-  .s5 .col-2 .img {
+  .s1 {
+    padding-top: 50px;
+  }
+
+  .s1 .col-2 .img {
+    height: 250px;
+  }
+
+  .s1 .col-2 .buttons {
+    padding-bottom: 50px;
+  }
+
+  .s3 .col-2 .text h3.slim, .s5 .col-2 .text h3.slim {
+    font-size: 32px;
+  }
+
+}
+
+@media screen and (max-width:899px) {
+
+  .s2 .col-2 .text, .s3 .col-2 .text, .s4 .col-2 .text, .s5 .col-2 .text, .s6 .col-2 .text {
+    padding: 20px 0px;
+  }
+  .s3 .initial, .s5 .initial {
+    display: none;
+  }
+
+  .s3 .final, .s5 .final {
+    display: block;
+  }
+
+  .s2 .col-2 .img, .s4 .col-2 .img, .s5 .col-2 .img, .s6 .col-2 .img {
+    height: 250px;
+  }
+
+  .s3 .col-2 .img, .s5 .col-2 .img {
     height: 300px;
+  }
+
+  .s2, .s3, .s4, .s5, .s6 {
+    padding: 50px 0px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+
+  .s1 .col-2 .text h3 {
+    font-size: 50px;
+  }
+
+  .s1 .col-2 .text h3.slim {
+    font-size: 35px;
+  }
+
+  .s1 .col-2 .text h4 {
+    font-size: 32px;
+  }
+
+  .s4 h3.slim, .s6 h3.slim {
+    font-size: 30px;
+  }
+
+}
+
+@media screen and (max-width: 520px) {
+
+  .s3 .col-2 .text h3.slim, .s5 .col-2 .text h3.slim {
+    font-weight: 400;
+    font-size: 24px;
+  }
+
+  .s4 h3.slim, .s6 h3.slim {
+    font-size: 25px;
   }
 
 }
 
 @media screen and (max-width: 440px) {
+
+  .s1 .col-2 .img {
+    height: 200px;
+  }
+
+  .s1 .col-2 .text h3 {
+    font-size: 35px;
+  }
+
+  .s1 .col-2 .text h3.slim {
+    font-size: 24px;
+    line-height: 1.5em;
+  }
+
+  .s1 .col-2 .text h4 {
+    font-size: 22px;
+    line-height: 1.5em;
+  }
 
   .s5 .col-2 .img {
     height: 200px;
