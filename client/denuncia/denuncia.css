@@ -166,17 +166,13 @@
   height: 250px;
 }
 
-.s7 .col-1 .text {
-  padding-top: 80px;
-}
-
 .s7 .col-1 .text h3 {
   font-size: 40px;
 }
 
 .s7 .col-1 .text h3.slim {
   font-weight: 400;
-  font-size: 30px;
+  font-size: 19px;
 }
 
 #divider_alac {
@@ -189,10 +185,22 @@
   margin-top: -3px;
 }
 
-.frame {
-  background-color: #fa8223;
+
+#divider_form {
+  background-image: url('/images/divider_blue.png');
+  background-position: top;
+  background-repeat: repeat-x;
+  background-size: contain;
   width: 100%;
+  height: 50px;
+  margin-top: -3px;
+}
+
+.frame {
+  background-color: #fff;
   padding-bottom: 50px;
+  max-width: 100%;
+  width: 100%;
 }
 
 .frame iframe {
@@ -263,6 +271,15 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  #divider_form {
+    background-image: url('/images/divider_blue_small.png');
+  }
+  #divider_alac {
+    background-image: url('/images/divider_small.png');
+  }
+}
+
 @media screen and (max-width: 575px) {
 
   .s1 .col-2 .text h3 {
@@ -297,6 +314,14 @@
 }
 
 @media screen and (max-width: 440px) {
+
+  #divider_form {
+    background-image: url('/images/divider_blue_xsmall.png');
+  }
+
+  #divider_alac {
+    background-image: url('/images/divider_xsmall.png');
+  }
 
   .s1 .col-2 .img {
     height: 200px;
