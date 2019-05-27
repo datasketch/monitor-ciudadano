@@ -16,7 +16,6 @@
   font-size: 14px;
   font-style: italic;
   font-weight: 800;
-  /* opacity: 0.5; */
   padding: 10px 10px;
 }
 
@@ -74,7 +73,7 @@
 .s5 .col-2 .img {
   background-image: url('/images/home_6.png');
   background-position: bottom;
-  height: 400px;
+  height: 450px;
 }
 
 .s5 .btn {
@@ -83,7 +82,7 @@
 }
 
 #divider_home {
-  background-image: url('/images/divider.png');
+  background-image: url('/images/divider_large.png');
   background-position: top;
   background-repeat: repeat-x;
   background-size: contain;
@@ -98,6 +97,28 @@
 
 .s5 .final {
   display: none;
+}
+
+@media screen and(max-width: 1650px) {
+  #divider_home {
+    background-image: url('/images/divider.png');
+  }
+}
+
+@media screen and (max-width: 1500px) {
+
+  .s2 .text h5 {
+    font-size: 14px;
+  }
+
+  .s2 .text h4 {
+    font-size: 30px;
+  }
+
+  .s5 .col-2 .img {
+    height: 400px;
+  }
+
 }
 
 @media screen and (max-width: 930px) {

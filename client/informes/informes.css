@@ -29,7 +29,7 @@
 }
 
 #divider_informes {
-  background-image: url('/images/divider_blue.png');
+  background-image: url('/images/divider_blue_large.png');
   background-position: top;
   background-repeat: repeat-x;
   background-size: contain;
@@ -76,6 +76,12 @@
 
 .s2 .card .btn.dark {
   background-color: #0a446b;
+}
+
+@media screen and(max-width: 1650px) {
+  #divider_informes {
+    background-image: url('/images/divider_blue.png');
+  }
 }
 
 @media screen and (max-width: 768px) {

@@ -43,7 +43,7 @@
 }
 
 #divider_descargas {
-  background-image: url('/images/divider_purple.png');
+  background-image: url('/images/divider_purple_large.png');
   background-position: top;
   background-repeat: repeat-x;
   background-size: contain;
@@ -107,6 +107,12 @@
 
 .s2 .card .btn.dark {
   background-color: #941994;
+}
+
+@media screen and(max-width: 1650px) {
+  #divider_descargas {
+    background-image: url('/images/divider_purple.png');
+  }
 }
 
 @media screen and (max-width: 899px) {

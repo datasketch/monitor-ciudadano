@@ -1,8 +1,8 @@
 .s1 {
   background-color: #fa8223;
   color: #fff;
-  background-image: url('/images/home_1.png');
-  height: 650px;
+  background-image: url('/images/home_1_large.png');
+  height: 700px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -17,36 +17,145 @@
 }
 
 .s1 h1 {
+  padding-left: 30%;
+  padding-top: 210px;
   font-weight: 800;
   letter-spacing: 0.05em;
-  padding-left: 13%;
-  padding-top: 190px;
-  font-size: 70px;
+  font-size: 75px;
 }
 
 .s1 h2 {
   font-weight: 400;
-  font-size: 71px;
+  font-size: 78px;
   letter-spacing: 0.07em;
-  padding-left: 13%;
+  padding-left: 30%;
 }
 
 .s1 h3 {
   font-weight: 800;
-  font-size: 42px;
+  font-size: 46px;
   letter-spacing: 0.07em;
-  padding-left: 13%;
+  padding-left: 30%;
 }
 
 .s1 .paragraph p {
   padding-top: 20px;
-  width: 390px;
+  width: 460px;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 20px;
   letter-spacing: 0.07em;
   color: #e32e04;
   text-align: center;
-  margin-left: 15%;
+  margin-left: 32%;
+}
+
+@media screen and (max-width: 1950px) {
+  .s1 {
+    background-image: url('/images/home_1.png');
+  }
+}
+
+@media screen and (max-width: 1880px) {
+
+  .s1 h1 {
+    padding-left: 27%;
+    padding-top: 215px;
+  }
+
+  .s1 h2 {
+    padding-left: 27%;
+  }
+
+  .s1 h3 {
+    padding-left: 27%;
+  }
+
+  .s1 .paragraph p {
+    margin-left: 29%;
+  }
+}
+
+@media screen and (max-width: 1750px) {
+  .s1 {
+    height: 730px;
+  }
+
+  .s1 h1 {
+    padding-left: 16%;
+    padding-top: 220px;
+  }
+
+  .s1 h2 {
+    padding-left: 16%;
+  }
+
+  .s1 h3 {
+    padding-left: 16%;
+  }
+
+  .s1 .paragraph p {
+    margin-left: 19%;
+  }
+}
+
+@media screen and (max-width: 1650px) {
+  .s1 {
+    height: 700px;
+  }
+
+  .s1 h1 {
+    font-size: 75px;
+    padding-left: 14%;
+    padding-top: 200px;
+  }
+
+  .s1 h2 {
+    font-size: 78px;
+    padding-left: 14%;
+  }
+
+  .s1 h3 {
+    font-size: 46px;
+    padding-left: 14%;
+  }
+
+  .s1 .paragraph p {
+    padding-top: 30px;
+    width: 420px;
+    font-size: 20px;
+    margin-left: 16%;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+
+  .s1 {
+    height: 650px;
+  }
+
+  .s1 h1 {
+    font-size: 70px;
+    padding-left: 13%;
+    padding-top: 190px;
+  }
+
+  .s1 h2 {
+    font-size: 71px;
+    padding-left: 13%;
+  }
+
+  .s1 h3 {
+    font-size: 42px;
+    padding-left: 13%;
+  }
+
+  .s1 .paragraph p {
+    padding-top: 20px;
+    width: 390px;
+    font-size: 18px;
+    margin-left: 15%;
+  }
+
 }
 
 @media screen and (max-width: 1400px) {

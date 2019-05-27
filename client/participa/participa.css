@@ -15,7 +15,7 @@
 }
 
 #divider_home {
-  background-image: url('/images/divider.png');
+  background-image: url('/images/divider_large.png');
   background-position: top;
   background-repeat: repeat-x;
   background-size: contain;
@@ -100,6 +100,12 @@
   background-image: url('/images/participa_3.png');
   background-position: left;
   height: 450px;
+}
+
+@media screen and(max-width: 1650px) {
+  #divider_home {
+    background-image: url('/images/divider.png');
+  }
 }
 
 @media screen and (max-width: 930px) {
