@@ -30,11 +30,16 @@ exports = module.exports = function (app) {
 	// Views
 	app.get('/', routes.views.index);
 	app.get('/about', routes.views.about);
+	app.get('/que-es', routes.views.about);
 	app.get('/datos/visor', routes.views.visor);
+	app.get('/visualiza', routes.views.visor);
+	app.get('/explora', routes.views.visor);
 	app.get('/datos/informes', routes.views.informes);
 	app.get('/datos/descargas', routes.views.descargas);
 	app.get('/datos/metodologia', routes.views.metodologia);
+	app.get('/metodologia', routes.views.metodologia);
 	app.get('/participa', routes.views.participa);
+	app.get('/contacto', routes.views.participa);
 	app.get('/denuncia', routes.views.denuncia);
 	// app.get('/blog/:category?', routes.views.blog);
 	// app.get('/blog/post/:post', routes.views.post);
