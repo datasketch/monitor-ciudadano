@@ -710,18 +710,33 @@ blockquote, q {
 }
 
 .fph {
-  font-size: 10px;
-  line-height: 13px;
-}
-
-.fph:not(:first-of-type) {
-  padding-bottom: 40px;
-  text-align: left;
+	flex-basis: 320px;
 }
 
 .footer .col .soclink {
   margin: 20px;
   margin-left: 0px;
+}
+
+.m-col.copyright {
+	width: 400px;
+}
+
+.copyright .col {
+	width: 350px;
+}
+
+.copyright .icons {
+	display: flex;
+	justify-content: center;
+}
+
+.ccicon {
+	width: 30px;
+  height: 30px;
+  margin: 20px 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 #transparencia {
@@ -738,11 +753,10 @@ blockquote, q {
 
 #fph {
   background-image: url('/images/logo_fph.svg');
-  width: 100%;
 }
 
-#social {
-  padding-top: 60px;
+#luminate {
+  background-image: url('/images/logo_luminate.svg');
 }
 
 #icon_twitter_w {
@@ -755,4 +769,17 @@ blockquote, q {
 
 #icon_facebook_w {
   background-image: url('/images/facebook_w.svg');
+}
+
+#cc {
+	background-image: url('/images/logo_cc.svg');
+	height: 30px;
+}
+
+#by {
+	background-image: url('/images/logo_by.svg');
+}
+
+#sa {
+	background-image: url('/images/logo_sa.svg');
 }

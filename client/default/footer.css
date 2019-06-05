@@ -75,6 +75,10 @@
   width: 100%;
 }
 
+#luminate {
+  background-image: url('/images/logo_luminate.svg');
+}
+
 #social {
   padding-top: 60px;
 }
