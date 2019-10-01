@@ -6,8 +6,15 @@ const { some } = require('lodash');
 */
 exports.initLocals = (req, res, next) => {
 	res.locals.navLinks = [
-		{ label: 'Home', key: 'home', href: '/' },
-		{ label: 'Blog', key: 'blog', href: '/blog' },
+		{ label: 'El monitor', key: 'about', href: '/about' },
+		{ label: 'Corrupción', key: 'corrupcion', href: '/corrupcion/visor', submenu: true },
+		{ label: 'Elecciones y contratos', key: 'elecciones-y-contratos', href: '/elecciones-y-contratos/historias', submenu: true },
+		{ label: 'Participa', key: 'participa', href: '/participa' },
+	];
+	res.locals.socialLinks = [
+		{ icon: 'icon_twitter', href: 'https://twitter.com/transparenciaco' },
+		{ icon: 'icon_mail', href: 'mailto:monitorciudadano@transparenciacolombia.org' },
+		{ icon: 'icon_facebook', href: 'https://www.facebook.com/transparenciaporcolombia/' },
 	];
 	res.locals.user = req.user;
 	next();

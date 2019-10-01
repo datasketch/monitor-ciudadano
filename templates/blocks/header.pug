@@ -1,19 +1,13 @@
 mixin social
   div.socialnav
-    a.soclink(href='https://twitter.com/transparenciaco', id='icon_twitter', target="_blank")
-    a.soclink(href='mailto:monitorciudadano@transparenciacolombia.org', id='icon_mail')
-    a.soclink(href='https://www.facebook.com/transparenciaporcolombia/', id='icon_facebook', target="_blank")
+    each link in socialLinks
+      a.soclink(href=link.href id=link.icon target="_blank")
 
 mixin nav
   div.navmenu
-    .navlink(class=(section === 'about' ? 'active' : ''))
-      a(href='/about') EL MONITOR
-    .navlink(class=(section === 'corrupcion' ? 'active_corrupcion' : ''))
-      a(href='/corrupcion/visor') CORRUPCIÓN
-    .navlink(class=(section === 'elecciones-y-contratos' ? 'active_eyc' : ''))
-      a(href='/elecciones-y-contratos/historias') ELECCIONES Y CONTRATOS
-    .navlink(class=(section === 'participa' ? 'active' : ''))
-      a(href='/participa') PARTICIPA
+    each link in navLinks
+      .navlink(class=`${section === link.key ? 'active' : ''} ${link.submenu ? 'active-level' : ''}`)
+        a(href=link.href) #{link.label.toUpperCase()}
 
 mixin header
   header.header

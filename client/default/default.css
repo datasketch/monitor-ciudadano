@@ -450,7 +450,8 @@ blockquote, q {
   color: #fff;
 }
 
-.navlink.active_corrupcion, .navlink.active_corrupcion a, .navlink.active_eyc, .navlink.active_eyc a {
+.navlink.active.active-level,
+.navlink.active.active-level a {
   background-color: #137fc0;
   color: #fff;
 }

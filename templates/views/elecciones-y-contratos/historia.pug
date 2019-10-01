@@ -1,0 +1,28 @@
+extends ../../layouts/default
+include ../../blocks/subnav
+
+block css
+  link(rel='stylesheet', href='/styles/default.css')
+  link(rel='stylesheet', href='/styles/eyc_historias.css')
+
+block content
+  - var story = data.story
+  div(style="background-color: #fff")
+    +subnav
+    .section(class='s1')
+      .col-1
+        .text
+          h4 HISTORIAS
+            strong DESTACADAS
+    .section(class='divider', id='divider_informes')
+    .s2(style="padding-top: 50px;")
+      .story-container
+        .story-header
+          .story-img(style=`background-image: url(${story.image.secure_url})`)
+          .story-info
+            h4.story-date #{new Date(story.publishedDate).getFullYear()}
+            h2.story-title #{story.title}
+        .story-content !{story.content.extended}
+
+block js
+  script(src="/js/eyc_historias.js")

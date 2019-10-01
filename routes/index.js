@@ -61,6 +61,7 @@ exports = module.exports = function (app) {
 		res.redirect('/corrupcion/metodologia');
 	});
 	app.get('/elecciones-y-contratos/historias', routes.eyc.historias);
+	app.get('/elecciones-y-contratos/historias/:slug', routes.eyc.historia);
 	app.get('/elecciones-y-contratos/campanas', routes.eyc.campanas);
 	app.get('/elecciones-y-contratos/partidos', routes.eyc.partidos);
 	app.get('/elecciones-y-contratos/contratos', routes.eyc.contratos);
@@ -70,6 +71,15 @@ exports = module.exports = function (app) {
 		res.redirect('/participa');
 	});
 	app.get('/denuncia', routes.views.denuncia);
+
+	app.use((req, res, next) => {
+		res.end('404 Not Found');
+	});
+
+	app.use((err, req, res, next) => {
+		console.log(err);
+		res.end('500 Internal Server Error');
+	});
 	// app.get('/blog/:category?', routes.views.blog);
 	// app.get('/blog/post/:post', routes.views.post);
 };
