@@ -418,7 +418,7 @@ blockquote, q {
 
 .navmenu {
   float: left;
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
   height: 100%;
   display: flex;
@@ -450,7 +450,7 @@ blockquote, q {
   color: #fff;
 }
 
-.navlink.active_datos, .navlink.active_datos a {
+.navlink.active_corrupcion, .navlink.active_corrupcion a, .navlink.active_eyc, .navlink.active_eyc a {
   background-color: #137fc0;
   color: #fff;
 }

@@ -9,6 +9,8 @@ keystone.pre('render', middleware.flashMessages);
 // Import Route Controllers
 const routes = {
 	views: importRoutes('./views'),
+	corrupcion: importRoutes('./views/corrupcion'),
+	eyc: importRoutes('./views/elecciones-y-contratos'),
 };
 
 // Setup Route Bindings
@@ -33,19 +35,36 @@ exports = module.exports = function (app) {
 	app.get('/que-es', (req, res) => {
 		res.redirect('/about');
 	});
-	app.get('/datos/visor', routes.views.visor);
+	app.get('/corrupcion/visor', routes.corrupcion.visor);
+	app.get('/datos/visor', (req, res) => {
+		res.redirect('/corrupcion/visor');
+	});
 	app.get('/visualiza', (req, res) => {
-		res.redirect('/datos/visor');
+		res.redirect('/corrupcion/visor');
 	});
 	app.get('/explora', (req, res) => {
-		res.redirect('/datos/visor');
+		res.redirect('/corrupcion/visor');
 	});
-	app.get('/datos/informes', routes.views.informes);
-	app.get('/datos/descargas', routes.views.descargas);
-	app.get('/datos/metodologia', routes.views.metodologia);
+	app.get('/corrupcion/informes', routes.corrupcion.informes);
+	app.get('/datos/informes', (req, res) => {
+		res.redirect('/corrupcion/informes');
+	});
+	app.get('/corrupcion/descargas', routes.corrupcion.descargas);
+	app.get('/datos/descargas', (req, res) => {
+		res.redirect('/corrupcion/descargas');
+	});
+	app.get('/corrupcion/metodologia', routes.corrupcion.metodologia);
+	app.get('/datos/metodologia', (req, res) => {
+		res.redirect('/corrupcion/metodologia');
+	});
 	app.get('/metodologia', (req, res) => {
-		res.redirect('/datos/metodologia');
+		res.redirect('/corrupcion/metodologia');
 	});
+	app.get('/elecciones-y-contratos/historias', routes.eyc.historias);
+	app.get('/elecciones-y-contratos/campanas', routes.eyc.campanas);
+	app.get('/elecciones-y-contratos/partidos', routes.eyc.partidos);
+	app.get('/elecciones-y-contratos/contratos', routes.eyc.contratos);
+	app.get('/elecciones-y-contratos/descargas', routes.eyc.descargas);
 	app.get('/participa', routes.views.participa);
 	app.get('/contacto', (req, res) => {
 		res.redirect('/participa');

@@ -1,0 +1,13 @@
+extends ../../layouts/default
+include ../../blocks/subnav
+
+block css
+	link(rel='stylesheet', href='/styles/default.css')
+	link(rel='stylesheet', href='/styles/corrupcion_visor.css')
+
+block content
+	+subnav
+	iframe(src='https://randommonkey.shinyapps.io/app_monitor/', frameborder="0", width="100%", style="min-height: 1000px")
+
+block js
+	script(src="/js/corrupcion_visor.js")

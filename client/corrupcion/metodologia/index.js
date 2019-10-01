@@ -1,5 +1,4 @@
-import './visor.css';
-console.log('Hola visor');
+import './corrupcion_metodologia.css';
 
 // Hot Module Replacement [HMR]
 if (module.hot) {

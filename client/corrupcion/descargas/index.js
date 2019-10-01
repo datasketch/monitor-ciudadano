@@ -1,5 +1,4 @@
-import './descargas.css';
-console.log('Hola descargas');
+import './corrupcion_descargas.css';
 
 // Hot Module Replacement [HMR]
 if (module.hot) {

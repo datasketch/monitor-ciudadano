@@ -1,9 +1,9 @@
-extends ../layouts/default
-include ../blocks/subnav
+extends ../../layouts/default
+include ../../blocks/subnav
 
 block css
 	link(rel='stylesheet', href='/styles/default.css')
-	link(rel='stylesheet', href='/styles/informes.css')
+	link(rel='stylesheet', href='/styles/corrupcion_informes.css')
 
 block content
 	+subnav
@@ -64,4 +64,4 @@ block content
 					a.btn(class='dark', href='/docs/corrupcion_en_territorios_de_paz.pdf', download='corrupcion_en_territorios_de_paz.pdf') Descargar
 
 block js
-	script(src="/js/informes.js")
+	script(src="/js/corrupcion_informes.js")

@@ -8,8 +8,10 @@ mixin nav
   div.navmenu
     .navlink(class=(section === 'about' ? 'active' : ''))
       a(href='/about') EL MONITOR
-    .navlink(class=(section === 'datos' ? 'active_datos' : ''))
-      a(href='/datos/visor') DATOS
+    .navlink(class=(section === 'corrupcion' ? 'active_corrupcion' : ''))
+      a(href='/corrupcion/visor') CORRUPCIÓN
+    .navlink(class=(section === 'elecciones-y-contratos' ? 'active_eyc' : ''))
+      a(href='/elecciones-y-contratos/historias') ELECCIONES Y CONTRATOS
     .navlink(class=(section === 'participa' ? 'active' : ''))
       a(href='/participa') PARTICIPA
 

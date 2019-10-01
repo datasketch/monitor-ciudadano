@@ -1,5 +1,4 @@
-import './informes.css';
-console.log('Hola INFORMES');
+import './eyc_contratos.css';
 
 // Hot Module Replacement [HMR]
 if (module.hot) {

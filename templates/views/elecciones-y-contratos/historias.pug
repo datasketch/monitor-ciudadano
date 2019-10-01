@@ -1,0 +1,36 @@
+extends ../../layouts/default
+include ../../blocks/subnav
+
+block css
+	link(rel='stylesheet', href='/styles/default.css')
+	link(rel='stylesheet', href='/styles/eyc_historias.css')
+
+block content
+	+subnav
+	.section(class='s1')
+		.col-1
+			.text
+				h4 HISTORIAS 
+					b DESTACADAS
+	.section(class='divider', id='divider_informes')
+	.section(class='s2')
+		.cards
+			.card
+				.img(id='h1')
+				.text
+					h4 2018
+					h5 Golazo a la corrupción segundo tiempo: Iván Duque vs. Gustavo Petro
+					.paragraph
+						p A pocos días de la segunda vuelta presidencial, Transparencia por Colombia analizó nuevamente las propuestas anticorrupción de los candidatos a la presidencia. Consulte aquí el comunicado.
+					a.btn(href='/docs/golazo_a_la_corrupcion_segundo_tiempo.pdf', target='_blank') Leer más
+			.card
+				.img(id='h2')
+				.text
+					h4 2018
+					h5 Golazo a la corrupción segundo tiempo: Iván Duque vs. Gustavo Petro
+					.paragraph
+						p A pocos días de la segunda vuelta presidencial, Transparencia por Colombia analizó nuevamente las propuestas anticorrupción de los candidatos a la presidencia. Consulte aquí el comunicado.
+					a.btn(href='/docs/golazo_a_la_corrupcion_segundo_tiempo.pdf', target='_blank') Leer más
+
+block js
+	script(src="/js/eyc_historias.js")

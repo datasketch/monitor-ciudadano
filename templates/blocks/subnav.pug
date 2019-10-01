@@ -1,7 +1,14 @@
 mixin subnav
   .subnav
     .items
-      a.item(href='/datos/visor', class=(subsection === 'visor' ? 'active' : '')) Visor de datos
-      a.item(href='/datos/informes', class=(subsection === 'informes' ? 'active' : '')) Informes
-      a.item(href='/datos/descargas', class=(subsection === 'descargas' ? 'active' : '')) Descargas
-      a.item(href='/datos/metodologia', class=(subsection === 'metodologia' ? 'active' : '')) Metodología
+      if (section === 'corrupcion')
+        a.item(href='/corrupcion/visor', class=(subsection === 'visor' ? 'active' : '')) Visor de datos
+        a.item(href='/corrupcion/informes', class=(subsection === 'informes' ? 'active' : '')) Informes
+        a.item(href='/corrupcion/descargas', class=(subsection === 'descargas' ? 'active' : '')) Descargas
+        a.item(href='/corrupcion/metodologia', class=(subsection === 'metodologia' ? 'active' : '')) Metodología
+      else if (section === 'elecciones-y-contratos')
+        a.item(href='/elecciones-y-contratos/historias', class=(subsection === 'historias' ? 'active' : '')) Historias destacadas
+        a.item(href='/elecciones-y-contratos/campanas', class=(subsection === 'campanas' ? 'active' : '')) Campañas electorales
+        a.item(href='/elecciones-y-contratos/partidos', class=(subsection === 'partidos' ? 'active' : '')) Partidos políticos
+        a.item(href='/elecciones-y-contratos/contratos', class=(subsection === 'contratos' ? 'active' : '')) Contratos públicos
+        a.item(href='/elecciones-y-contratos/descargas', class=(subsection === 'descargas' ? 'active' : '')) Descargas
