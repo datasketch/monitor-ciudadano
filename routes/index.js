@@ -9,7 +9,7 @@ keystone.pre('render', middleware.flashMessages);
 // Import Route Controllers
 const routes = {
 	views: importRoutes('./views'),
-	corrupcion: importRoutes('./views/corrupcion'),
+	corrupcion: importRoutes('./views/hechos-corrupcion'),
 	eyc: importRoutes('./views/elecciones-y-contratos'),
 };
 
@@ -35,30 +35,30 @@ exports = module.exports = function (app) {
 	app.get('/que-es', (req, res) => {
 		res.redirect('/about');
 	});
-	app.get('/corrupcion/visor', routes.corrupcion.visor);
+	app.get('/hechos-corrupcion/visor', routes.corrupcion.visor);
 	app.get('/datos/visor', (req, res) => {
-		res.redirect('/corrupcion/visor');
+		res.redirect('/hechos-corrupcion/visor');
 	});
 	app.get('/visualiza', (req, res) => {
-		res.redirect('/corrupcion/visor');
+		res.redirect('/hechos-corrupcion/visor');
 	});
 	app.get('/explora', (req, res) => {
-		res.redirect('/corrupcion/visor');
+		res.redirect('/hechos-corrupcion/visor');
 	});
-	app.get('/corrupcion/informes', routes.corrupcion.informes);
+	app.get('/hechos-corrupcion/informes', routes.corrupcion.informes);
 	app.get('/datos/informes', (req, res) => {
-		res.redirect('/corrupcion/informes');
+		res.redirect('/hechos-corrupcion/informes');
 	});
-	app.get('/corrupcion/descargas', routes.corrupcion.descargas);
+	app.get('/hechos-corrupcion/descargas', routes.corrupcion.descargas);
 	app.get('/datos/descargas', (req, res) => {
-		res.redirect('/corrupcion/descargas');
+		res.redirect('/hechos-corrupcion/descargas');
 	});
-	app.get('/corrupcion/metodologia', routes.corrupcion.metodologia);
+	app.get('/hechos-corrupcion/metodologia', routes.corrupcion.metodologia);
 	app.get('/datos/metodologia', (req, res) => {
-		res.redirect('/corrupcion/metodologia');
+		res.redirect('/hechos-corrupcion/metodologia');
 	});
 	app.get('/metodologia', (req, res) => {
-		res.redirect('/corrupcion/metodologia');
+		res.redirect('/hechos-corrupcion/metodologia');
 	});
 	app.get('/elecciones-y-contratos/historias', routes.eyc.historias);
 	app.get('/elecciones-y-contratos/historias/:slug', routes.eyc.historia);

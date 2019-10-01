@@ -7,7 +7,7 @@ const { some } = require('lodash');
 exports.initLocals = (req, res, next) => {
 	res.locals.navLinks = [
 		{ label: 'El monitor', key: 'about', href: '/about' },
-		{ label: 'Corrupción', key: 'corrupcion', href: '/corrupcion/visor', submenu: true },
+		{ label: 'Los hechos', key: 'hechos-corrupcion', href: '/hechos-corrupcion/visor', submenu: true },
 		{ label: 'Elecciones y contratos', key: 'elecciones-y-contratos', href: '/elecciones-y-contratos/historias', submenu: true },
 		{ label: 'Participa', key: 'participa', href: '/participa' },
 	];

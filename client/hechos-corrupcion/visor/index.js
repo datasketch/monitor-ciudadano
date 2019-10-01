@@ -1,4 +1,4 @@
-import './corrupcion_metodologia.css';
+import './hc_visor.css';
 
 // Hot Module Replacement [HMR]
 if (module.hot) {

@@ -1,11 +1,11 @@
 mixin subnav
   .subnav
     .items
-      if (section === 'corrupcion')
-        a.item(href='/corrupcion/visor', class=(subsection === 'visor' ? 'active' : '')) Visor de datos
-        a.item(href='/corrupcion/informes', class=(subsection === 'informes' ? 'active' : '')) Informes
-        a.item(href='/corrupcion/descargas', class=(subsection === 'descargas' ? 'active' : '')) Descargas
-        a.item(href='/corrupcion/metodologia', class=(subsection === 'metodologia' ? 'active' : '')) Metodología
+      if (section === 'hechos-corrupcion')
+        a.item(href='/hechos-corrupcion/visor', class=(subsection === 'visor' ? 'active' : '')) Visor de datos
+        a.item(href='/hechos-corrupcion/informes', class=(subsection === 'informes' ? 'active' : '')) Informes
+        a.item(href='/hechos-corrupcion/descargas', class=(subsection === 'descargas' ? 'active' : '')) Descargas
+        a.item(href='/hechos-corrupcion/metodologia', class=(subsection === 'metodologia' ? 'active' : '')) Metodología
       else if (section === 'elecciones-y-contratos')
         a.item(href='/elecciones-y-contratos/historias', class=(subsection === 'historias' ? 'active' : '')) Historias destacadas
         a.item(href='/elecciones-y-contratos/campanas', class=(subsection === 'campanas' ? 'active' : '')) Campañas electorales
