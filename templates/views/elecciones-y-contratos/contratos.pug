@@ -1,5 +1,6 @@
 extends ../../layouts/default
 include ../../blocks/subnav
+include ../../blocks/footer_eyc
 
 block css
 	link(rel='stylesheet', href='/styles/default.css')
@@ -8,6 +9,7 @@ block css
 block content
 	+subnav
 	iframe(src='https://randommonkey.shinyapps.io/app_monitor/', frameborder="0", width="100%", style="min-height: 1000px")
+	+footer_eyc
 
 block js
 	script(src="/js/eyc_contratos.js")

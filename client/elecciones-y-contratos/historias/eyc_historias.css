@@ -127,6 +127,37 @@
   max-width: 100%;
 }
 
+.s3 {
+  background-color: #fa8223;
+  color: #e32e04;
+}
+
+.s3 h3 {
+  color: #e32e04;
+}
+
+.s3 .btn {
+  background-color: #e32e04;
+  color: #fff;
+}
+
+.s3 .col-2 .img {
+  background-image: url('/images/participa_1.png');
+  height: 500px;
+}
+
+.s3 .col-2 .text h3:last-of-type {
+  font-weight: 400;
+}
+
+.s3 .paragraph {
+  color: #fff;
+}
+
+.s3 .final {
+  display: none;
+}
+
 @media screen and(max-width: 1650px) {
   #divider_informes {
     background-image: url('/images/divider_blue.png');
@@ -153,6 +184,34 @@
   .story-content {
     width: 100%;
   }
+}
+
+@media screen and (max-width: 930px) {
+
+  .s3 .col-2 .img {
+    height: 450px;
+  }
+
+}
+
+@media screen and (max-width: 899px) {
+
+  .s3 .initial {
+    display: none;
+  }
+
+  .s3 .final {
+    display: block;
+  }
+
+  .s3 .col-2 .img {
+    height: 300px;
+  }
+
+  .s3 .col-2 .text {
+    padding-bottom: 100px;
+  }
+
 }
 
 @media screen and (max-width: 768px) {

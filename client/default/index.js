@@ -1,4 +1,5 @@
 import './default.css';
+import './footer_eyc.css';
 // import './header.css';
 // import './subnav.css';
 // import './cards.css';

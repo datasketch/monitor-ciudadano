@@ -1,5 +1,6 @@
 extends ../../layouts/default
 include ../../blocks/subnav
+include ../../blocks/footer_eyc
 
 block css
 	link(rel='stylesheet', href='/styles/default.css')
@@ -113,6 +114,7 @@ block content
 				.buttons
 					//- a.btn(href='/docs/', target='_blank') Más detalles
 					a.btn(class='dark', href='/docs/reporte_notas_20190507.xlsx', target='_blank') Descargar
+	+footer_eyc
 
 block js
 	script(src="/js/eyc_descargas.js")

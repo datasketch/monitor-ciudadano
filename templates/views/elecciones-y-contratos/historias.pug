@@ -1,5 +1,6 @@
 extends ../../layouts/default
 include ../../blocks/subnav
+include ../../blocks/footer_eyc
 
 block css
 	link(rel='stylesheet', href='/styles/default.css')
@@ -7,6 +8,18 @@ block css
 
 block content
 	+subnav
+	.section(class='s3')
+		.col-2(class='final')
+			.img
+		.col-2
+			.text
+				h4 CONOCE
+				h3 ELECCIONES
+				h3.slim Y CONTRATOS
+				.paragraph
+					p Esta es una solución tecnológica que permite conocer datos acerca de los candidatos a cargos de elección popular y sus financiadores. Aporta al control social y facilita la realización de cruces de información entre datos oficiales de Cuentas Claras y SECOP.
+		.col-2(class='initial')
+			.img
 	.section(class='s1')
 		.col-1
 			.text
@@ -24,6 +37,7 @@ block content
 						h5.story-title #{story.title}
 						.paragraph !{story.content.brief}
 						a.btn(href=`/elecciones-y-contratos/historias/${story.slug}`) Leer más
+	+footer_eyc
 
 block js
 	script(src="/js/eyc_historias.js")

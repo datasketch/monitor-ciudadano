@@ -1,0 +1,62 @@
+.footer_eyc {
+  width: 100%;
+  background-color: #e9ecf0;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  min-height: 150px;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.footer_eyc .col {
+  width: 200px;
+  padding: 0px 40px;
+  font-size: 10px;
+  text-align: center;
+}
+
+.footer_eyc .s-col {
+  width: 180px;
+  padding: 0px 30px;
+}
+
+.footer_eyc .m-col {
+  width: 300px;
+  padding: 0px 30px;
+}
+
+.logo {
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+}
+
+#somosmas {
+  background-image: url('/images/logo_somosmas.png');
+}
+
+#cipd {
+  background-image: url('/images/logo_cipd.png');
+}
+
+#gc {
+  background-image: url('/images/logo_gc.png');
+}
+
+#mintic {
+  background-image: url('/images/logo_mintic.png');
+}
+
+#pnud {
+  background-image: url('/images/logo_pnud.png');
+}
+
+#undesa {
+  background-image: url('/images/logo_undesa.png');
+}
