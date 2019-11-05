@@ -109,6 +109,7 @@
   background-color: #941994;
 }
 
+
 @media screen and(max-width: 1650px) {
   #divider_descargas {
     background-image: url('/images/divider_purple.png');
@@ -158,3 +159,54 @@
     background-image: url('/images/divider_purple_xsmall.png');
   }
 }
+
+.banner {
+  background-color: #fa8223;
+  color: #fff;
+}
+
+.banner .col-2 .img {
+  background-image: url('/images/metodologia.png');
+  background-position: right;
+}
+
+.banner .btn {
+  color: #fff;
+  background-color: #f54205;
+}
+
+.banner .text h5 {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 800;
+  padding: 10px 10px;
+}
+
+.banner .text h4 {
+  font-size: 30px;
+}
+
+.banner .text h3, .banner .text h4 {
+  color: #f54205;
+}
+
+.banner .text p {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 720px) {
+  .banner .col-2 .img {
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .banner .text h4 {
+    font-size: 20px;
+  }
+
+  .banner .text h3 {
+    font-size: 38px;
+  }
+}
+

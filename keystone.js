@@ -35,6 +35,8 @@ keystone.set('nav', {
 	posts: ['posts', 'post-categories'],
 	usuarios: 'users',
 	descargas: 'downloads',
+	// eslint-disable-next-line quote-props
+	'metodologías': 'methodologies',
 });
 
 

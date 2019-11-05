@@ -15,9 +15,12 @@ block content
 				h4 CONOCE NUESTRA
 				h3 METODOLOGÍA
 				.paragraph
-					p El Monitor acopia, cuantifica, analiza y visibiliza los hechos de corrupción que registran los medios de comunicación y los órganos de control e investigación. Los datos acopiados y procesados y archivos planos quedan a disposición de líderes sociales, periodistas analistas académicos, estudiantes y cualquier ciudadano interesado en consultarlos. Si quieres conocer más sobre cómo recopilamos y organizamos estos datos, descarga nuestra ficha metodológica.
+					p #{methodology.description}
 			.buttons
-				a.btn(href='/docs/ficha_metodologica_23042019.pdf', download='ficha_metodologica_23042019.pdf') DESCÁRGALA
+				if methodology.methodology
+					a.btn(href=methodology.methodology) DESCÁRGALA
+				if methodology.glossary
+					a.btn(href=methodology.glossary) DESCARGAR GLOSARIO
 
 block js
 	script(src="/js/hc_metodologia.js")

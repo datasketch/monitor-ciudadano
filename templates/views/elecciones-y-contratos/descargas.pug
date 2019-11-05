@@ -45,6 +45,20 @@ block content
 					.buttons
 						//- a.btn(href='/docs/', target='_blank') Más detalles
 						a.btn(class='dark', href=(doc.link), target='_blank') Descargar
+	.section.banner
+		.col-2(class='s')
+			.img
+		.col-2(class='m')
+			.text
+				h4 CONOCE NUESTRA
+				h3 METODOLOGÍA
+				.paragraph
+					p #{methodology.description}
+			.buttons
+				if methodology.methodology
+					a.btn(href=methodology.methodology) DESCARGAR METODOLOGÍA
+				if methodology.glossary
+					a.btn(href=methodology.glossary) DESCARGAR GLOSARIO
 	+footer_eyc
 
 block js
