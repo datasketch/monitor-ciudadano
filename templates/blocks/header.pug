@@ -6,7 +6,7 @@ mixin social
 mixin nav
   div.navmenu
     each link in navLinks
-      .navlink(class=`${section === link.key ? 'active' : ''} ${link.submenu ? 'active-level' : ''}`)
+      .navlink(class=`${section === link.key ? 'active' : ''} ${link.submenu ? 'active-level' : ''} ${link.label == 'Elecciones y contratos' ? 'eyc' : ''}`)
         a(href=link.href) #{link.label.toUpperCase()}
 
 mixin header

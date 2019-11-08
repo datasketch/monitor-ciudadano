@@ -437,6 +437,10 @@ blockquote, q {
   min-width: 100px;
 }
 
+.navlink.eyc {
+	display: none;
+}
+
 .navlink a {
   text-align: center;
   text-decoration: none;
