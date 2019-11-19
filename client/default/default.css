@@ -571,10 +571,15 @@ blockquote, q {
   -ms-overflow-style: none;
   overflow: -moz-scrollbars-none;
   min-width: 610px;
+	height: 55px;
 }
 
 .subnav .item {
-  align-self: center;
+  /* align-self: center; */
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
   text-align: center;
   padding: 15px;
   /* padding-left: 8%;
@@ -582,7 +587,12 @@ blockquote, q {
   color: #fff;
   text-decoration: none;
   width: 25%;
-  min-width: 120px;
+  min-width: 180px;
+}
+
+.subnav .item .link {
+	text-decoration: none;
+	color: #fff;
 }
 
 .subnav .item.active {
