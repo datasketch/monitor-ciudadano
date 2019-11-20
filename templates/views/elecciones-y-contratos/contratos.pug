@@ -8,8 +8,13 @@ block css
 
 block content
 	+subnav
-	iframe(src='https://randommonkey.shinyapps.io/app-cruces/', frameborder="0", width="100%", style="min-height: 1000px")
-	iframe(src='https://randommonkey.shinyapps.io/app-func-cruces/', frameborder="0", width="100%", style="min-height: 1000px")
+	.selector-contratos
+		h3 ¿QUÉ CONTRATOS QUIERES EXPLORAR?
+		.buttons
+			button(id='btn-campanas', type='button') Financiadores de campañas
+			button(id='btn-partidos', type='button') Financiadores de partidos
+	iframe.app(id='contratos-campanas', src='https://randommonkey.shinyapps.io/app-cruces/', frameborder="0")
+	iframe.app(class='hidden', id='contratos-partidos', src='https://randommonkey.shinyapps.io/app-func-cruces/', frameborder="0")
 	+footer_eyc
 
 block js
