@@ -60,6 +60,9 @@ exports = module.exports = function (app) {
 	app.get('/metodologia', (req, res) => {
 		res.redirect('/hechos-corrupcion/metodologia');
 	});
+	app.get('/elecciones-y-contratos', (req, res) => {
+		res.redirect('/elecciones-y-contratos/historias');
+	});
 	app.get('/elecciones-y-contratos/historias', routes.eyc.historias);
 	app.get('/elecciones-y-contratos/historias/:slug', routes.eyc.historia);
 	app.get('/elecciones-y-contratos/campanas', routes.eyc.campanas);

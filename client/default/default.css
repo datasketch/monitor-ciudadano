@@ -770,6 +770,10 @@ blockquote, q {
   background-image: url('/images/logo_fph.svg');
 }
 
+#open_society {
+  background-image: url('/images/logo_opensociety.svg');
+}
+
 #luminate {
   background-image: url('/images/logo_luminate.svg');
 }
