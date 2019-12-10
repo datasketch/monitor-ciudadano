@@ -1,5 +1,5 @@
 import './eyc_contratos.css';
-import { iframeResize } from 'iframe-resizer';
+const { iframeResize } = require('iframe-resizer');
 
 iframeResize({ checkOrigin: false }, '#contratos-campanas');
 iframeResize({ checkOrigin: false }, '#contratos-partidos');

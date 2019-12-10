@@ -1,5 +1,5 @@
 import './eyc_campanas.css';
-import { iframeResize } from 'iframe-resizer';
+const { iframeResize } = require('iframe-resizer');
 
 iframeResize({ checkOrigin: false }, 'iframe');
 

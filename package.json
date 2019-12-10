@@ -1,6 +1,6 @@
 {
   "name": "monitor-ciudadano",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "async": "2.1.4",
@@ -29,6 +29,7 @@
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "postcss-loader": "^3.0.0",
     "style-loader": "^0.23.1",
+    "terser-webpack-plugin": "^2.2.2",
     "uglifyjs-webpack-plugin": "^2.1.2",
     "webpack": "^4.30.0",
     "webpack-cli": "^3.3.0",
@@ -47,6 +48,7 @@
     "last 2 versions"
   ],
   "engines": {
-    "node": "10.15.1"
+    "node": "10.16.0",
+    "npm": "6.12.0"
   }
 }
