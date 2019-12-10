@@ -3,12 +3,12 @@ include ../../blocks/subnav
 include ../../blocks/footer_eyc
 
 block css
-	link(rel='stylesheet', href='/styles/default.css')
-	link(rel='stylesheet', href='/styles/eyc_partidos.css')
+	link(rel='stylesheet' href='/styles/default.css')
+	link(rel='stylesheet' href='/styles/eyc_partidos.css')
 
 block content
 	+subnav
-	iframe(src='https://randommonkey.shinyapps.io/app-funcionamiento/', frameborder="0", width="100%", style="min-height: 1850px")
+	iframe(src='https://randommonkey.shinyapps.io/app-funcionamiento/' frameborder="0" width="100%")
 
 block js
 	script(src="/js/eyc_partidos.js")

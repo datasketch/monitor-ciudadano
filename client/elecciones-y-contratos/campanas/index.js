@@ -1,4 +1,7 @@
 import './eyc_campanas.css';
+import { iframeResize } from 'iframe-resizer';
+
+iframeResize({ checkOrigin: false }, 'iframe');
 
 // Hot Module Replacement [HMR]
 if (module.hot) {
