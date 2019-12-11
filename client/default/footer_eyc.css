@@ -1,8 +1,19 @@
-.footer_eyc {
-  width: 100%;
+.footer_eyc-wrapper {
   background-color: #e9ecf0;
-  color: #fff;
   font-family: 'Raleway', sans-serif;
+}
+
+.footer_eyc-disclaimer {
+  font-size: 12px;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 16px 0;
+  width: 80%;
+}
+
+.footer_eyc {
+  color: #fff;
+  width: 100%;
   font-weight: 400;
   min-height: 150px;
   display: flex;
