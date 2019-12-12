@@ -8,7 +8,7 @@ exports.initLocals = (req, res, next) => {
 	res.locals.navLinks = [
 		{ label: 'El monitor', key: 'about', href: '/about' },
 		{ label: 'Datos', key: 'hechos-corrupcion', href: '/hechos-corrupcion/visor', submenu: true },
-		{ label: 'Elecciones y contratos', key: 'elecciones-y-contratos', href: '/elecciones-y-contratos/historias', submenu: true },
+		{ label: 'Elecciones y contratos', key: 'elecciones-contratos', href: '/elecciones-contratos', submenu: true },
 		{ label: 'Participa', key: 'participa', href: '/participa' },
 	];
 	res.locals.socialLinks = [
