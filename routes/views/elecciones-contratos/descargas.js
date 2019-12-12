@@ -5,7 +5,7 @@ const Methodology = keystone.list('Methodology').model;
 exports = module.exports = async (req, res, next) => {
 	const view = new keystone.View(req, res);
 	const { locals } = res;
-	locals.section = 'elecciones-y-contratos';
+	locals.section = 'elecciones-contratos';
 	locals.subsection = 'descargas';
 
 	try {
@@ -17,5 +17,5 @@ exports = module.exports = async (req, res, next) => {
 		return next(error);
 	}
 
-	view.render('elecciones-y-contratos/descargas');
+	view.render('elecciones-contratos/descargas');
 };

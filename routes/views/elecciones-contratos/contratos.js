@@ -3,7 +3,7 @@ const keystone = require('keystone');
 exports = module.exports = (req, res) => {
 	const view = new keystone.View(req, res);
 	const { locals } = res;
-	locals.section = 'elecciones-y-contratos';
+	locals.section = 'elecciones-contratos';
 	locals.subsection = 'contratos';
-	view.render('elecciones-y-contratos/contratos');
+	view.render('elecciones-contratos/contratos');
 };

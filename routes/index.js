@@ -10,7 +10,7 @@ keystone.pre('render', middleware.flashMessages);
 const routes = {
 	views: importRoutes('./views'),
 	corrupcion: importRoutes('./views/hechos-corrupcion'),
-	eyc: importRoutes('./views/elecciones-y-contratos'),
+	eyc: importRoutes('./views/elecciones-contratos'),
 };
 
 // Setup Route Bindings
@@ -60,15 +60,12 @@ exports = module.exports = function (app) {
 	app.get('/metodologia', (req, res) => {
 		res.redirect('/hechos-corrupcion/metodologia');
 	});
-	app.get('/elecciones-y-contratos', (req, res) => {
-		res.redirect('/elecciones-y-contratos/historias');
-	});
-	app.get('/elecciones-y-contratos/historias', routes.eyc.historias);
-	app.get('/elecciones-y-contratos/historias/:slug', routes.eyc.historia);
-	app.get('/elecciones-y-contratos/campanas', routes.eyc.campanas);
-	app.get('/elecciones-y-contratos/partidos', routes.eyc.partidos);
-	app.get('/elecciones-y-contratos/contratos', routes.eyc.contratos);
-	app.get('/elecciones-y-contratos/descargas', routes.eyc.descargas);
+	app.get('/elecciones-contratos', routes.eyc.historias);
+	app.get('/elecciones-contratos/historias/:slug', routes.eyc.historia);
+	app.get('/elecciones-contratos/campanas', routes.eyc.campanas);
+	app.get('/elecciones-contratos/partidos', routes.eyc.partidos);
+	app.get('/elecciones-contratos/contratos', routes.eyc.contratos);
+	app.get('/elecciones-contratos/descargas', routes.eyc.descargas);
 	app.get('/participa', routes.views.participa);
 	app.get('/contacto', (req, res) => {
 		res.redirect('/participa');

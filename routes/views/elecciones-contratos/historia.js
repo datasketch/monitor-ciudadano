@@ -5,7 +5,7 @@ exports = module.exports = async (req, res, next) => {
 	const view = new keystone.View(req, res);
 	const { slug } = req.params;
 	const { locals } = res;
-	locals.section = 'elecciones-y-contratos';
+	locals.section = 'elecciones-contratos';
 	locals.subsection = 'historias';
 	locals.data = {
 		story: {},
@@ -14,7 +14,7 @@ exports = module.exports = async (req, res, next) => {
 	try {
 		const story = await Post.findOne({ slug });
 		locals.data.story = story;
-		view.render('elecciones-y-contratos/historia');
+		view.render('elecciones-contratos/historia');
 	} catch (error) {
 		return next(error);
 	};
