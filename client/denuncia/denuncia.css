@@ -166,6 +166,10 @@
   height: 250px;
 }
 
+.s7 a {
+  color: inherit;
+}
+
 .s7 .col-1 .text h3 {
   font-size: 40px;
 }
