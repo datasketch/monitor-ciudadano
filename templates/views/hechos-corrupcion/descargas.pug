@@ -23,116 +23,29 @@ block content
 	.section(class='divider', id='divider_descargas')
 	.section(class='s2')
 		.cards
-			//- ACTUALIZACION DESCARGAS
-			.card
-				.text
-					h4 Primer informe del Gobierno Nacional
-					h5 Descripción
-					.paragraph
-						p Primer informe de seguimiento de la acción pública del Gobierno Nacional en materia anticorrupción.
-					h5 Realizador
-					.paragraph
-						p Transparencia por Colombia
-					h5 Fecha de creación
-					.paragraph
-						p Marzo de 2020
-					h5 Fecha de actualización
-					.paragraph
-						p Marzo de 2020
-				.buttons
-					//- a.btn(href='/docs/', target='_blank') Más detalles
-					a.btn(class='dark', href='https://transparenciacolombia.org.co/Documentos/2019/Monitor/primer-informe-seguimiento-accion-publica-gobierno.pdf', target='_blank') Descargar
-
-			.card
-				.text
-					h4 Hechos de corrupción en Colombia
-					h5 Descripción
-					.paragraph
-						p Hechos reportados por fuentes de prensa nacionales y regionales entre enero 1 de 2016 a julio 31 de 2018.
-					h5 Realizador
-					.paragraph
-						p Transparencia por Colombia
-					h5 Fecha de creación
-					.paragraph
-						p Agosto de 2018
-					h5 Fecha de actualización
-					.paragraph
-						p Marzo de 2019
-				.buttons
-					//- a.btn(href='/docs/', target='_blank') Más detalles
-					a.btn(class='dark', href='/docs/reporte_casos_20190429.xlsx', target='_blank') Descargar
-			.card
-				.text
-					h4 Notas de prensa de hechos de corrupción en Colombia
-					h5 Descripción
-					.paragraph
-						p Notas de prensa de hechos de corrupción en Colombia reportados por medios de comunicación nacionales y regionales entre enero 1 del 2016 y julio 31 de 2018.
-					h5 Realizador
-					.paragraph
-						p Transparencia por Colombia
-					h5 Fecha de creación
-					.paragraph
-						p Marzo de 2018
-					h5 Fecha de actualización
-					.paragraph
-						p Marzo de 2019
-				.buttons
-					//- a.btn(href='/docs/', target='_blank') Más detalles
-					a.btn(class='dark', href='/docs/reporte_notas_20190429.xlsx', target='_blank') Descargar
-			.card
-				.text
-					h4 Hechos de corrupción vinculados a actores en Colombia
-					h5 Descripción
-					.paragraph
-						p Hechos de corrupción vinculados a actores involucrados en Colombia, reportados por fuentes de prensa nacionales y regionales entre enero 1 del 2016 y julio 31 de 2018.
-					h5 Realizador
-					.paragraph
-						p Ecoanalítica y Transparencia por Colombia
-					h5 Fecha de creación
-					.paragraph
-						p Febrero de 2019
-					h5 Fecha de actualización
-					.paragraph
-						p Abril de 2019
-				.buttons
-					//- a.btn(href='/docs/', target='_blank') Más detalles
-					a.btn(class='dark', href='/docs/base_de_datos_hechos_y_actores.xlsx', target='_blank') Descargar
-			.card
-				.text
-					h4 Hechos de corrupción en territorios de paz
-					h5 Descripción
-					.paragraph
-						p Hechos de corrupción en territorios de paz reportados por fuentes de prensa nacionales y regionales entre enero 1 del 2010 y diciembre 31 de 2016.
-					h5 Realizador
-					.paragraph
-						p Transparencia por Colombia
-					h5 Fecha de creación
-					.paragraph
-						p Febrero de 2017
-					h5 Fecha de actualización
-					.paragraph
-						p Septiembre de 2017
-				.buttons
-					//- a.btn(href='/docs/reporte_casos_20190502_primer_informe.xlsx', target='_blank') Más detalles
-					a.btn(class='dark', href='/docs/reporte_casos_20190502_primer_informe.xlsx', target='_blank') Descargar
-			.card
-				.text
-					h4 Notas de prensa de hechos de corrupción en territorios de paz
-					h5 Descripción
-					.paragraph
-						p Notas de prensa de hechos de corrupción en territorios de paz reportados por medios de comunicación nacionales y regionales entre enero 1 del 2010 y diciembre 31 de 2016.
-					h5 Realizador
-					.paragraph
-						p Transparencia por Colombia
-					h5 Fecha de creación
-					.paragraph
-						p Febrero de 2017
-					h5 Fecha de actualización
-					.paragraph
-						p Septiembre de 2017
-				.buttons
-					//- a.btn(href='/docs/', target='_blank') Más detalles
-					a.btn(class='dark', href='/docs/reporte_notas_20190507.xlsx', target='_blank') Descargar
+			//- ACTUALIZACION 
+			if downloads.length
+				each doc in downloads
+					.card
+						.text
+							h4= doc.title
+							h5 Descripción
+							.paragraph
+								p= doc.description
+							h5 Realizador
+							.paragraph
+								p= doc.author
+							h5 Fecha de creación
+							.paragraph
+								- var created = doc._.createdAt.moment().locale('es').format('MMMM [de] YYYY');
+								p #{created.charAt(0).toUpperCase() + created.slice(1)}
+							h5 Fecha de actualización
+							.paragraph
+								- var updated = doc._.updatedAt.moment().locale('es').format('MMMM [de] YYYY');
+								p #{updated.charAt(0).toUpperCase() + updated.slice(1)}
+						.buttons
+							//- a.btn(href='/docs/', target='_blank') Más detalles
+							a.btn(class='dark', href=doc.link, target='_blank') Descargar
 
 block js
 	script(src="/js/hc_descargas.js")
