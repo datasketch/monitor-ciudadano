@@ -10,7 +10,7 @@
     "keystone-email": "1.0.5",
     "lodash": "^4.13.1",
     "npm": "^6.9.0",
-    "pug": "2.0.0-beta11"
+    "pug": "3.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
